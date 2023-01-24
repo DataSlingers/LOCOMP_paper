@@ -21,7 +21,7 @@ ridgecv = lrn( 'regr.cv_glmnet',alpha=0)
 rff = lrn('regr.ranger')
 alpha=0.1
 iters = 100
-fit_funcs_name = c('Ridge (CV)','RF','SVM')
+fit_funcs_name = c('Ridge','RF','SVM')
 
 
 
@@ -67,7 +67,7 @@ for (snr in c(0:10)){
 
       if(namee == 'RF'){
           fit_func = rff
-      }else if(namee == 'Ridge (CV)'){
+      }else if(namee == 'Ridge'){
           fit_func = ridgecv
       }else if(namee =='SVM'){
           fit_func = svmm

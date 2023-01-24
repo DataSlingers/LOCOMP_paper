@@ -51,8 +51,8 @@ for itrial in range(100):
         X,Y,X1,Y1 = SimuLinearClass(N,M,10000,snr,seed = 123*itrial+456)
     if generate=='nonlinear':
         X,Y,X1,Y1 = SimuNonlinearClass(N,M,10000,snr,seed = 123*itrial+456)
-    if generate=='autoregressive':
-        X,Y,X1,Y1 = SimuAutoregressiveClass(N,M,10000,snr,seed = 123*itrial+456)
+    if generate=='correlated':
+        X,Y,X1,Y1 = SimuCorrelatedClass(N,M,10000,snr,seed = 123*itrial+456)
                                      
     res = LOCOMPClass(X,Y,  n_ratio,m_ratio,B,fit_func,selected_features=[0],alpha=0.1,bonf=False)
     ress[itrial] = res                                     

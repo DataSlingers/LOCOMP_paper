@@ -57,8 +57,8 @@ for itrial in range(100):
         X,Y,X1,Y1 = SimuLinear(N,M,10000,snr,seed = 123*itrial+456)
     if generate=='nonlinear':
         X,Y,X1,Y1 = SimuNonlinear(N,M,10000,snr,seed = 123*itrial+456)
-    if generate=='autoregressive':
-        X,Y,X1,Y1 = SimuAutoregressive(N,M,10000,snr,seed = 123*itrial+456)
+    if generate=='correlated':
+        X,Y,X1,Y1 = SimuCorrelated(N,M,10000,snr,seed = 123*itrial+456)
                                      
     res = LOCOMPReg(X,Y, n_ratio,m_ratio,B,fit_func,selected_features=[0],alpha=0.1,bonf=False)
     ress[itrial] = res                                     
