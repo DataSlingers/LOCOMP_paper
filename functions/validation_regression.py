@@ -1,7 +1,7 @@
 
 import pandas as pd
 import numpy as np
-from LOCO_regression import *
+from functions.LOCO_regression import *
 
 def validateLOCOMPReg(X,Y,X1, Y1, n_ratio,m_ratio,B,fit_func,LOCO = True, selected_features=[0],alpha=0.1,bonf=False):
 

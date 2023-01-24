@@ -14,7 +14,7 @@ warnings.filterwarnings("ignore")
 fit_funcs = {
     'DecisionTreeReg':DecisionTreeReg,
     'ridgecv':ridgecv,
-    'ridge2':ridge2,
+    'ridge':ridge2,
     'RFreg':RFreg,
     'SVR':kernelSVR
         }

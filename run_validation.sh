@@ -2,7 +2,7 @@
 
 for fit in DecisionTreeReg ridge SVR
 do
-     for generate in linear nonlinear autoregressive
+     for generate in linear nonlinear correlated 
         do
                for size in 0 1 2 3 4 5 6 7 8
                do

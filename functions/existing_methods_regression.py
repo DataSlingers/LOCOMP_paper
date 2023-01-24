@@ -2,7 +2,7 @@ import vimpy
 
 import pandas as pd
 import numpy as np
-from LOCO_regression import *
+from functions.LOCO_regression import *
 
 ###################
 ####### LOCO

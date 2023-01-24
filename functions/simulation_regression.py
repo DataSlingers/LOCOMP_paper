@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn import preprocessing
 
     
-def SimuAutoregressive(N,M,N1,SNR, seed=1):
+def SimuCorrelated(N,M,N1,SNR, seed=1):
     M1=int(0.05*M)
     np.random.seed(seed)
     mu = [0]*M

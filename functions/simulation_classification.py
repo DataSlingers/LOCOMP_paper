@@ -32,7 +32,7 @@ def SimuNonlinearClass(N,M,N1,SNR,M1=5,seed=1):
     Y1 = np.random.binomial(1,pr1)
     return (X,Y,X1,Y1)
 
-def SimuAutoregressiveClass(N,M,N1,SNR, seed=1):
+def SimuCorrelatedClass(N,M,N1,SNR, seed=1):
     M1=int(0.05*M)
     np.random.seed(seed)
     mu = [0]*M
