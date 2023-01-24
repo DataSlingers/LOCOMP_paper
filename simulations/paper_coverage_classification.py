@@ -1,7 +1,10 @@
-from functions.LOCO_classification import *
-from functions.simulation_classification import *
-from functions.ML_models import *
-from functions.existing_methods_classification import *
+import sys 
+sys.path.append('..')
+
+from LOCO_classification import *
+from simulation_classification import *
+from existing_methods_classification import *
+from ML_models import *
 
 
 import pickle
@@ -34,7 +37,7 @@ if fit_func==kernelSVC:
 Ns = [100,500,1000,2000,250,750,1250,1500,1750]
 M=200
 N=Ns[int(size)]
-B=100
+B=10000
 alpha= 0.1
 n_ratio=int(np.sqrt(N))/N
 m_ratio=int(np.sqrt(M))/M
